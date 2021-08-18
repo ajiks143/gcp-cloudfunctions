@@ -1,5 +1,6 @@
 # gcp-cloudfunctions
-Sample use-case using Google Cloud Functions
+This sample code makes use of Google Cloud Function to capture file metadata as and when the file is uploaded to Cloud Storage.
+The metadata is captured into Cloud Datastore.
 
 **Code Execution:**
 
