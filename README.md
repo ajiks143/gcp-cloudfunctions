@@ -12,7 +12,8 @@ The metadata is captured into Cloud Datastore.
     ```sh
     cd gcp-cloudfunctions
     ```
- - Provide authentication credentials to your application code by setting the environment variable `GOOGLE_APPLICATION_CREDENTIALS`
+ - Create a service account from IAM console and create Key from the created Service account
+   .Provide authentication credentials to your application code by setting the environment variable `GOOGLE_APPLICATION_CREDENTIALS`
     ```sh
     export GOOGLE_APPLICATION_CREDENTIALS="KEY_PATH"
     ```
