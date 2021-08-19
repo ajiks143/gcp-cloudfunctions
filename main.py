@@ -9,7 +9,6 @@ kind = "file_metdata"
 def gcs_file_metdata(event, context):
     """Background Cloud Function to be triggered by Cloud Storage.
        This generic function write the file metadata to Cloud Datastore when the file is uploaded to Storage.
-
     Args:
         event (dict):  The dictionary with data specific to this type of event.
                        The `data` field contains a description of the event in
@@ -31,6 +30,7 @@ def gcs_file_metdata(event, context):
     metadata["Bucket"] = event['bucket']
     metadata["File"] = event['name']
     metadata["md5Hash"] = event['md5Hash']
+    metadata["size"] = event['size']
     metadata["timeCreated"] = event['timeCreated']
     metadata["updated"] = event['updated']
 
